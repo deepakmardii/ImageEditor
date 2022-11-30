@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "poppons", sans-serif;
+}
+
+body {
+  background-color: #44c7c3;
+}
+
+.wrapper {
+  width: 85vw;
+  min-height: 50vmin;
+  padding: 50px 50px;
+  background-color: #242424;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  box-shadow: 0 20px 35px rgba(255, 255, 255, 0.15);
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+}
+
+.editor {
+  min-height: 35vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.editor label {
+  font-size: 2.8vmin;
+  color: #fff;
+  font-weight: 400;
+}
+
+.editor input[type="range"] {
+  display: block;
+  width: 100%;
+  position: relative;
+  margin-top: 5px;
+}
+
+.flip-buttons {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.flip-buttons .flip-option {
+  margin-top: 10px;
+}
+
+.result {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.result img {
+  display: block;
+  position: relative;
+  max-width: calc(100% - 4vmin);
+  max-height: 45vmin;
+  margin: auto;
+}
+
+/* .image-container{
+    display: none;
+} */
+
+input[type="file"] {
+  display: none;
+}
+
+.result label {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  width: 220px;
+  background-color: #17cc;
+  color: #fff;
+  text-align: center;
+  padding: 16px 0;
+  border-radius: 5px;
+  font-size: 2.8vmin;
+  font-weight: 400;
+  cursor: pointer;
+}
